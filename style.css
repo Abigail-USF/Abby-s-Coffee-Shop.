@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f6eee7;
+    color: #3b2f2f;
+}
+
+header {
+    background-color: #5c3d2e;
+    color:white;
+    padding: 25px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd6a5;
+}
+
+main {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+section {
+    padding: 30px;
+}
+
+.service {
+    background-color: white;
+    padding: 25px;
+    margin: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.service:hover {
+    transform: scale(1.05);
+    background-color: #fff3e6;
+}
+
+footer {
+    background-color: #5c3d2e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Flexbox layout for service blocks */
+body > section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 700px) {
+    body > section {
+        flex-direction: column;
+}
+
+nav {
+    flex-direction: column;
+    gap: 10px;
+}
+
+}
