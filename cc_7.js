@@ -4,5 +4,10 @@
     const ctaHeadline = document.getElementById("ctaHeadline");
 
     updateButton.addEventListener("click", function() {
-        ctaHeadline.textContent = headline.value;
+        const newHeadline = headlineInput.value.trim();
+
+        if (newHeadline !== "") {
+            ctaHeadlie.textContent = newHeadline;
+            headlineInput.value = "";
+        }
     });

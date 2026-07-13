@@ -59,7 +59,7 @@ footer {
 }
 
 /* Flexbox layout for service blocks */
-body > section {
+main > section {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -67,7 +67,7 @@ body > section {
 
 /* Mobile responsiveness */
 @media (max-width: 700px) {
-    body > section {
+    main > section {
         flex-direction: column;
 }
 
